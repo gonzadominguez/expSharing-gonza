@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="maximum-scale=1,width=device-width,initial-scale=1,user-scalable=0">
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <link rel="stylesheet" href="css/style.css">
+    <title>Validar</title>
+  </head>
+  <body background ="images/registro.jpg">
+    <section class="container">
+      <header class="main-header">
+        <a href="#" class="toggle-nav">
+          <span class="ion-navicon-round"></span>
+        </a>
+            <img src="images/logoresponsive.png" alt="logotipo" class="logonav">
+
+        <nav class="main-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sign-up.html">Registrarse</a></li>
+            <li><a href="loginn.html">Iniciar Sesión</a></li>
+            <li><a href="FAQs.html">FAQs</a></li>
+          </ul>
+        </nav>
+      </header>
+      <section class="body-full">
+        <div class="body-logo">
+          <img src="images/logo.png" alt="logotipo" class="logo">
+        </div>
+        <div class="body-form">
+          <h1 class="titular">Recuperar su Contraseña</h1>
+          <form class="valid"  method="post">
+              <div class="label">
+                <label>Email:</label><br>
+                <input type="email" name="usuario" placeholder="user@email.com" required autofocus>
+              </div>
+              <br><br>
+              <div class="label">
+                <label>Palabra Clave</label><br>
+                <input type="password" name="clave" required>
+              </div>
+                <br><br>
+                  <button type="submit">Enviar</button>
+              <br><br>
+          </form>
+          <div class="label">
+            <p>Te enviamos por mail los pasos para recuperar tu contraseña</p>
+            <br><br>
+            <h3>¿Todavía con problemas? Hace click <a href="mailto:expsharing@exshar.com">aqui</a>"</h3>
+          </div>
+        </div>
+        <div class="corte"></div>
+      </section>
+      <footer>
+        <div>English - Portuguese - Home - Registrarse -  Iniciar Sesión - FAQ's - Políticas de uso</div>
+      </footer>
+    </section>
+      <script>
+      $('.toggle-nav').click(function(){
+        $('.main-nav').slideToggle(250);
+      });
+      </script>
+      </script>
+
+  </body>
+</html>

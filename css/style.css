@@ -1,0 +1,301 @@
+/*=========== General =========*/
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  border: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  min-height: 100vh;
+  font-size: 16px;
+  margin: 0;
+}
+
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+.logonav, .toggle-nav, .home-responsive, .logo-responsive {
+  display: none;
+}
+
+.container {
+  min-height: 100%;
+}
+
+.main-header{
+  min-height: 45px;
+  background-color: #200167;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.8em;
+  font-weight: normal;
+  color: #0ff;
+}
+.main-nav ul {
+  padding-top: 9px;
+  text-align: center;
+  margin: 0 auto;
+}
+.main-nav ul li {
+  display: inline-block;
+  text-align: center;
+  border: 1px solid #0ff;
+  margin: 0 5px;
+}
+.main-nav ul li a, .main-nav ul li a:hover, .main-nav ul li a:visited, .main-nav ul li a:active {
+  display: inline-block;
+  width: 144px;
+  height: 27px;
+  color: #0ff;
+  padding: 7px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+ .main-nav ul li a:hover{
+   background-color: rgba(6,90,130, 0.5);
+ }
+/*=========== Home =========*/
+
+.container-home {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items:center;
+}
+
+.home {
+
+	width: 630px;
+	margin-top: 15%;
+	/*margin-left: 30%;*/
+}
+
+.home p {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 0.8em;
+	text-align: justify;
+	line-height: 1.5em;
+  color: white;
+}
+.main-header {
+  width: 100%
+}
+/*=========== Registro =========*/
+
+.logo {
+  width: 630px;
+  height: 175px;
+}
+.body-full {
+}
+
+.body-logo {
+  margin-left: 105px;
+  margin-top: 237px;
+  float: left;
+}
+.body-form {
+  margin-top: 119px;
+  margin-right: 162px;
+  float: right;
+}
+.body-form .titular {
+  font-size: 23px;
+  font-family: 'Mukta', sans-serif;
+  font-weight: 600;
+  color: white;
+  padding-bottom: 19px;
+}
+.body-form .label {
+  font-family: 'Mukta', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: #200167;
+}
+.body-form input{
+  padding: 5px;
+  color: #000;
+  width: 220px;
+}
+.body-form button{
+
+  padding: 5px;
+  color: #000;
+  width: 220px;
+  background: linear-gradient(to right, #48bfed 0%,#07ffbf 100%);
+}
+.corte {
+  clear: both;
+}
+
+
+/*=========== FAQ's =========*/
+
+
+
+/*=========== FOOTER =========*/
+
+footer {
+  position: fixed;
+  height: 35px;
+  background-color: #200167;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: lighter;
+  font-size: 12px;
+  color: #0ff;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 5px;
+}
+
+/*========================= RESPONSIVE ====================================*/
+
+
+@media(max-width: 640px) {
+
+/*=========== Home =========*/
+
+body {
+
+  background: linear-gradient(#200167, #ea2f89);
+	height: 100vh;
+	margin: 0 15px;
+}
+
+.main-nav, .home {
+	display: none;
+}
+
+.logonav {
+	display: inline-flex;
+	float: right;
+	margin: auto;
+	height: 44px;
+
+}
+
+.toggle-nav{
+	display: inline-block;
+	margin: 15px 0 5px;
+	/*background-color: #222;*/
+	width: 45px;
+	text-align: center;
+	padding: 5px 5px;
+	color: #00ffff;
+	font-size: 1.5em;
+}
+
+.main-header {
+  background: transparent;
+}
+.main-nav ul {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+.main-nav ul li {
+  margin-bottom: 5px
+}
+
+.main-nav a{
+	display: block;
+	font-family: 'Montserrat', sans-serif;
+	color: #00ffff;
+	font-size: 1em;
+	text-align: center;
+	padding: 15px;
+	/*border: solid 1px #00ffff*/
+}
+
+.home-responsive {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.logoRes {
+
+	margin: 15% auto 10%;
+}
+
+.home-responsive p {
+
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	color: white;
+	text-align:justify;
+  text-justify:auto;
+	margin-bottom: 15%;
+	}
+
+.home-responsive button {
+    /*display: flex;
+    width: 50%;*/
+    background: linear-gradient(#48bfed, #07ffbf);
+		border-radius: 3px;
+    border: none;
+		font-family: 'Mukta:600', sans-serif;
+    color: #200167;
+    padding: 15px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.2em;
+		/*left: -60%;
+		transform: translateX(60%);*/
+
+}
+
+.main-footer {
+	margin-top: 30%;
+	text-align: center;
+}
+
+.main-footer a {
+	margin-left: 5px
+	display: block;
+	float: left;
+	font-family: 'Montserrat', sans-serif;
+	color: #00ffff;
+	font-size: 0.8em;
+	text-align: center;
+	padding: 15px;
+}
+
+/*=========== Login & Registro =========*/
+
+  label {
+    display: none;
+  }
+  .body-logo {
+    display: none;
+  }
+  .logo-responsive {
+    display: inline-block;
+  }
+  .body-form {
+    margin: auto;
+    width: auto;
+    height: auto;
+    float: none;
+    text-align: center;
+    margin-top: 30px;
+  }
+  .body-form input {
+    padding: 10px;
+    width: 80%;
+  }
+  .body-form button {
+    padding: 10px;
+    width: 80%;
+  }
+}
